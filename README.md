@@ -6,4 +6,4 @@ Proyek ini bertujuan untuk mengembangkan sebuah sistem klasifikasi gambar yang d
 
 **Link Dataset yang digunakan:** [RPS Dataset](https://drive.google.com/drive/folders/1J6V4J4uwRKofPFGLV5SuDyNQJudmETFP?usp=sharing). Preprocessing yang digunakan antara lain Resizing, Normalization, Augmentation.
 
-![download](https://github.com/user-attachments/assets/ed4b2624-666f-4f40-97a4-c0466d8351a9)
+
