@@ -49,7 +49,7 @@ Projeck ini menggunakan Dataset yang diambil dari [Kaggle](https://www.kaggle.co
    ```
 ---
 
-## 🛠🖋️Deskripsi Model
+## 🖋️Deskripsi Model
 ### CNN Model
 #### Preprocessing
 Preprocessing yang dilakukan antara lain adalah resizing (128,128), lalu rescale / normalization dengan rentang 1./255, dilanjut dengan melakukan splitting dataset menjadi 3 (Training, Validation, dan Testing)
@@ -64,6 +64,31 @@ Plot diatas menunjukkan bahwa Training accuracy meningkat secara bertahap hingga
 ![image](https://github.com/user-attachments/assets/ff4b4f8d-5e7a-4a28-8397-1000cb35cdc0)
 
 Dapat dilihat pada plot loss di atas, training loss lebih tinggi dibandingkan validation loss. Hal ini bisa disebabkan oleh model yang underfitting, regularisasi yang berlebihan, atau distribusi data yang tidak konsisten.
+
+![image](https://github.com/user-attachments/assets/46b5cda0-435a-42d2-b3d4-e5709b827676)
+
+Gambar di atas merupakan Classification Report dari model setelah dilakukan prediksi terhadap testing set. Dapat dilihat bahwa akurasinya mencapai 95%. Pada label 'Gadang', model berhasil mencapai precision, recall, dan f1-score 100%. Meskipun label 'Honai' memiliki recall yang sempurna (100%), precision-nya sedikit lebih rendah (86%), yang menunjukkan beberapa kesalahan pada prediksi kelas tersebut. Secara keseluruhan, model menunjukkan performa yang sangat baik dengan f1-score rata-rata 0.95, baik untuk label individual maupun secara keseluruhan.
+
+### MobileNet
+#### Preprocessing
+Preprocessing yang dilakukan antara lain adalah resizing (299,299) sesuai rekomendasi Inception-V3, lalu rescale / normalization dengan rentang 1./255, lalu melakukan augmentasi dengan parameter seperti sheer_range yang diatur ke 0.2, zoom_range diatur ke 0.2, dan horizontal_flip. Setelah augmentasi selesai dilakukan, langkah terakhir adalah splitting dataset menjadi 3 (Training, Validation, dan Testing) sesuai dengan penjelasan pada Dataset.
+
+#### Modelling & Evaluation
+Berikut adalah hasil dari fitting MobileNet Model yang telah dibangun :
+
+![image](https://github.com/user-attachments/assets/fbf2dd15-c02f-4557-b8f5-9342cb64bc8a)
+
+Plot di atas menunjukkan bahwa baik training accuracy maupun validation accuracy keduanya mendekati 100%. Hal ini mengindikasikan bahwa model memiliki performa yang sangat baik pada kedua data tersebut dan tidak mengalami overfitting. Model tampaknya dapat belajar dengan baik dari data training dan juga generalisasi dengan baik pada data validasi. Namun, untuk memastikan model tidak hanya menghafal data, disarankan untuk melakukan evaluasi lebih lanjut dengan dataset yang lebih besar atau data yang belum terlihat (testing set).
+
+![image](https://github.com/user-attachments/assets/ba5e99d8-a3e6-491a-9e49-48d6cdece493)
+
+Dapat dilihat pada plot loss diatas. Training dan Val Loss sama - sama turun, namun val_loss cenderung lebih tinggi dibanding training_loss nya. Hal ini mungkin saja disebabkan karena terjadi Overfitting pada Model
+
+![image](https://github.com/user-attachments/assets/220aa91a-018e-46ba-95e3-d9900b55369b)
+
+Gambar di atas merupakan Classification Report dari model setelah dilakukan prediksi terhadap testing set. Dapat dilihat bahwa akurasinya mencapai 100%, dengan precision, recall, dan f1-score hampir sempurna untuk setiap label. Model berhasil mencapai hasil 100% pada label 'Honai', 'Panjang', dan 'Tongkonan', serta sangat mendekati 100% pada label lainnya seperti 'Gadang' dan 'Joglo'. Secara keseluruhan, model menunjukkan performa yang sangat baik dengan nilai f1-score rata-rata 1.00, yang menunjukkan bahwa model dapat menggeneralisasi dengan sangat baik pada data validasi dan tidak mengalami overfitting.
+
+
 
 
 
