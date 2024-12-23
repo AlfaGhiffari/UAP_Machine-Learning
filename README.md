@@ -56,10 +56,13 @@ Preprocessing yang dilakukan antara lain adalah resizing (128,128), lalu rescale
 
 #### Modelling & Evaluation
 Berikut adalah hasil dari fitting CNN Model yang telah dibangun :
+
 ![image](https://github.com/user-attachments/assets/190b53e9-950c-465d-bbd3-f23f4a1931b3)
+
 Plot diatas menunjukkan bahwa Training accuracy meningkat secara bertahap hingga mencapai sekitar 96%, Testing accuracy juga meningkat secara bertahap hingga mencapai sekitar 94%
 
 ![image](https://github.com/user-attachments/assets/ff4b4f8d-5e7a-4a28-8397-1000cb35cdc0)
+
 Dapat dilihat pada plot loss di atas, training loss lebih tinggi dibandingkan validation loss. Hal ini bisa disebabkan oleh model yang underfitting, regularisasi yang berlebihan, atau distribusi data yang tidak konsisten.
 
 
