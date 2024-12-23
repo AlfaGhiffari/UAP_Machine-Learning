@@ -1,4 +1,4 @@
-# 💫Klasifikasi Rumah Adat Indonesia dengan CNN dan MobileNet💫
+# 💫 Klasifikasi Rumah Adat Indonesia dengan CNN dan MobileNet 💫
 
 ## 🧷Deskripsi Projeck
 
@@ -8,7 +8,7 @@ Projeck ini menggunakan Dataset yang diambil dari [Kaggle](https://www.kaggle.co
 
 ---
 
-## 🛠️Langkah Instalasi
+## 🛠️ Langkah Instalasi
 1. **Clone Repository:**
    ```bash
    git init
@@ -49,7 +49,7 @@ Projeck ini menggunakan Dataset yang diambil dari [Kaggle](https://www.kaggle.co
    ```
 ---
 
-## 🖋️Deskripsi Model
+## 🖋️ Deskripsi Model
 ### CNN Model
 #### Preprocessing
 Preprocessing yang dilakukan antara lain adalah resizing (128,128), lalu rescale / normalization dengan rentang 1./255, dilanjut dengan melakukan splitting dataset menjadi 3 (Training, Validation, dan Testing)
@@ -90,7 +90,7 @@ Gambar di atas merupakan Classification Report dari model setelah dilakukan pred
 
 ---
 
-## 📊 Hasil dan Analisis
+## 💹 Hasil dan Analisis
 
 | Model      | Training Accuracy | Validation Accuracy | Testing Accuracy |
 |------------|-------------------|---------------------|------------------|
@@ -113,6 +113,15 @@ Gambar di atas merupakan Classification Report dari model setelah dilakukan pred
    MobileNet:
    MobileNet menunjukkan performa loss yang sangat baik, dengan loss yang terus menurun secara konsisten selama pelatihan, menunjukkan kemampuannya dalam meminimalkan kesalahan dengan sangat efektif.
 
+Kesimpulan :
+Dari tabel perbandingan performa model, dapat dilihat bahwa CNN menunjukkan akurasi yang sangat baik pada data training dan testing (95%), namun terdapat sedikit penurunan performa pada beberapa label. MobileNet, di sisi lain, menunjukkan performa yang sempurna dengan akurasi 100% pada semua dataset. Hal ini menjadikan MobileNet pilihan yang lebih baik jika efisiensi dan kemampuan generalisasi lebih diutamakan, terutama pada aplikasi yang memerlukan penggunaan sumber daya komputasi yang lebih rendah tanpa mengorbankan akurasi.
 
+---
 
+## 💻 Menjalankan App 
+Aplikasi web telah di-deploy dan dapat diakses melalui tautan [ini](https://uap-machine-learning.streamlit.app/).
 
+---
+
+## 👨‍💻 Author  
+- [Alfa Khaeral Ghiffari](https://github.com/AlfaGhiffari)
