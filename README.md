@@ -1,14 +1,14 @@
 # 💫 Klasifikasi Rumah Adat Indonesia dengan CNN dan MobileNet 💫
 
-## 🧷Deskripsi Projeck
+## 🗂️ Deskripsi Projeck
 
 Projeck ini bertujuan untuk mengembangkan sebuah sistem klasifikasi gambar yang dapat mengenali dan membedakan gambar-gambar yang termasuk dalam kategori *"Gadang"* dari Sumatera Barat, *"Honai"* dari Papua, *"Jonglo"* dari Jawa, *"Panjang"* dari Kalimantan, dan *"Tongkonan"* dari Sulawesi Selatan. Proyek ini tidak hanya bertujuan untuk mengidentifikasi jenis rumah adat berdasarkan ciri visualnya tetapi juga diharapkan dapat membantu melestarikan budaya dan warisan arsitektur tradisional Indonesia melalui teknologi modern. Dengan memanfaatkan dataset gambar yang relevan dan teknik pembelajaran mesin, sistem ini akan dilatih untuk mengenali pola dan karakteristik visual unik dari setiap kategori rumah adat. 
 
-Projeck ini menggunakan Dataset yang diambil dari [Kaggle](https://www.kaggle.com/datasets/rariffirmansah/rumah-adat), yang telah dilakukan Preprocessing seperti antara lain Resizing, Normalization dan  Augmentation, yang disimpan pada link [ini](https://drive.google.com/drive/folders/1PUx-3EpQFIIxOXHD52Pk1Y1s8KCF5SVZ?usp=drive_link). Adapun Model yang telah dilatih dapat diaskses [disini](https://drive.google.com/drive/folders/15b_OdgaOHIArKq-llL0N_4vj2k9QGTFG?usp=sharing).
+Projeck ini menggunakan Dataset yang diambil dari [Kaggle](https://www.kaggle.com/datasets/rariffirmansah/rumah-adat), yang telah dilakukan Preprocessing seperti antara lain Resizing, Normalization dan  Augmentation, yang disimpan pada link [ini](https://drive.google.com/drive/folders/1PUx-3EpQFIIxOXHD52Pk1Y1s8KCF5SVZ?usp=drive_link). Adapun Model yang telah dilatih dapat diakses [disini](https://drive.google.com/drive/folders/15b_OdgaOHIArKq-llL0N_4vj2k9QGTFG?usp=sharing).
 
 ---
 
-## 🛠️ Langkah Instalasi
+## 🖇️ Langkah Instalasi
 1. **Clone Repository:**
    ```bash
    git init
@@ -49,7 +49,7 @@ Projeck ini menggunakan Dataset yang diambil dari [Kaggle](https://www.kaggle.co
    ```
 ---
 
-## 🖋️ Deskripsi Model
+## 🏷️ Deskripsi Model
 ### CNN Model
 #### Preprocessing
 Preprocessing yang dilakukan antara lain adalah resizing (128,128), lalu rescale / normalization dengan rentang 1./255, dilanjut dengan melakukan splitting dataset menjadi 3 (Training, Validation, dan Testing)
@@ -90,7 +90,7 @@ Gambar di atas merupakan Classification Report dari model setelah dilakukan pred
 
 ---
 
-## 💹 Hasil dan Analisis
+## 📝 Hasil dan Analisis 
 
 | Model      | Training Accuracy | Validation Accuracy | Testing Accuracy |
 |------------|-------------------|---------------------|------------------|
