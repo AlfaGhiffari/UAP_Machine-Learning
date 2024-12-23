@@ -6,13 +6,15 @@ Projeck ini bertujuan untuk mengembangkan sebuah sistem klasifikasi gambar yang 
 
 Projeck ini menggunakan Dataset yang diambil dari [Kaggle](https://www.kaggle.com/datasets/rariffirmansah/rumah-adat), yang telah dilakukan Preprocessing seperti antara lain Resizing, Normalization dan  Augmentation, yang disimpan pada link [ini](https://drive.google.com/drive/folders/1PUx-3EpQFIIxOXHD52Pk1Y1s8KCF5SVZ?usp=drive_link).
 
+---
+
 ## 🛠️Langkah Instalasi
 1. **Clone Repository:**
    ```bash
    git init
    git add .
    git commit -m "Inisialisasi proyek"
-   git remote add origin https://github.com/marwasaniyya/UAP.git
+   git remote add origin https://github.com/AlfaGhiffari/UAP_Machine-Learning.git
    git branch -M main
    git push -u origin main
 
@@ -45,7 +47,8 @@ Projeck ini menggunakan Dataset yang diambil dari [Kaggle](https://www.kaggle.co
    ```bash
    pdm run start
    ```
-   
+---
+
 ## 🛠️Langkah Instalasi
 
 
