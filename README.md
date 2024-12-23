@@ -98,14 +98,18 @@ Gambar di atas merupakan Classification Report dari model setelah dilakukan pred
 | MobileNet  |       100%        |         100%        |       100%       |
 
 1. Akurasi:
+   
    CNN:
    Akurasi training mencapai 95%, dengan akurasi testing 95%. Model ini menunjukkan performa yang sangat baik pada data training dan testing, namun masih ada sedikit penurunan pada akurasi pada beberapa label seperti 'Honai' dan 'Joglo'.
+   
    MobileNet:
    Akurasi pada training, validation, dan testing semuanya mencapai 100%. Hal ini menunjukkan bahwa MobileNet mampu menggeneralisasi dengan sangat baik pada data baru tanpa mengalami overfitting, menghasilkan prediksi yang sangat akurat pada semua label.
    
 2. Loss:
+   
    CNN:
    Loss pada model CNN tetap stabil, namun cenderung sedikit lebih tinggi pada beberapa label, yang menunjukkan bahwa model mungkin memerlukan beberapa penyesuaian agar lebih optimal dalam meminimalkan kesalahan pada data testing.
+   
    MobileNet:
    MobileNet menunjukkan performa loss yang sangat baik, dengan loss yang terus menurun secara konsisten selama pelatihan, menunjukkan kemampuannya dalam meminimalkan kesalahan dengan sangat efektif.
 
