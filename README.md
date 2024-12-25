@@ -71,7 +71,7 @@ Gambar di atas merupakan Classification Report dari model setelah dilakukan pred
 
 ### MobileNet
 #### Preprocessing
-Preprocessing yang dilakukan antara lain adalah resizing (299,299) sesuai rekomendasi Inception-V3, lalu rescale / normalization dengan rentang 1./255, lalu melakukan augmentasi dengan parameter seperti sheer_range yang diatur ke 0.2, zoom_range diatur ke 0.2, dan horizontal_flip. Setelah augmentasi selesai dilakukan, langkah terakhir adalah splitting dataset menjadi 3 (Training, Validation, dan Testing) sesuai dengan penjelasan pada Dataset.
+Preprocessing yang dilakukan antara lain adalah resizing (128,128) sesuai rekomendasi Inception-V3, lalu rescale / normalization dengan rentang 1./255, lalu melakukan augmentasi dengan parameter seperti sheer_range yang diatur ke 0.2, zoom_range diatur ke 0.2, dan horizontal_flip. Setelah augmentasi selesai dilakukan, langkah terakhir adalah splitting dataset menjadi 3 (Training, Validation, dan Testing) sesuai dengan penjelasan pada Dataset.
 
 #### Modelling & Evaluation
 Berikut adalah hasil dari fitting MobileNet Model yang telah dibangun :
